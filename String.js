@@ -8,12 +8,13 @@ const message = `Hello my name is ${name} and I have ${repocount} repo` // templ
 const game_name = new String("abcdef"); // String object
 
 const game_name2 = "abcdef"; // String primitive
-
+console.log(typeof game_name); // object
+console.log(typeof game_name2); // string
 console.log(game_name[0]); // a
 console.log(game_name2[0]); // a
-console.log(game_name.__proto__); // String.prototype
-console.log(game_name.substring(0, 3)); // abc
-console.log(game_name.slice(-1, 6)); // f
+console.log(game_name.__proto__); // String.prototype // String object prototype // String object is an instance of String.prototype
+console .log(game_name.substring(0, 3)); // abc
+console.log(game_name.slice(1,-2)); // "" // empty string
 
 console.log(game_name.charAt(0)); // a
 

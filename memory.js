@@ -15,7 +15,7 @@ let user;
 console.log(typeof user); // undefined
 const id = Symbol('id'); // unique identifier
 const another_id = Symbol('id'); // unique identifier
-console.log(id === another_id); // false
+console.log(String(id) == String(another_id)); // true
 console.log(id===another_id); // false
 
 const no = 312332332n; // 312332332n is a big integer
